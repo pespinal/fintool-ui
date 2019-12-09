@@ -8,6 +8,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { MatCardModule } from '@angular/material/card';
     MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   exports: [
     MatBottomSheetModule,
