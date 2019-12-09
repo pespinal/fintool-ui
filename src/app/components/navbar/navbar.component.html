@@ -13,6 +13,9 @@
       <button mat-menu-item>Servicios</button>
     </mat-menu>
     <div class="spacer"></div>
-    <button mat-button (click)="login()">Login</button>
+    <button mat-button *ngIf="!isSignedIn" (click)="login()">Login</button>
+    <button mat-button *ngIf="isSignedIn" (click)="logout()">
+        <img width="30" src="{{userPhoto}}"/> Cerrar sesión
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
